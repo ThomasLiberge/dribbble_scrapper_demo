@@ -1,57 +1,64 @@
-body{
-  background-image: url(Images/background.jpg);
-  color: white;
-  font-size: 20px;
-  font-family: Helvetica;
-}
-h1{
-  font-family: orator;
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-p{
-  font-family: orator;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-h2 {
-  font-family: Courier;
-  color: white;
-  font-weight: lighter;
-  font-size: 18px;
+html, body{
+  margin: 0px;
+  color: #FFD447;
+  /*color: #black;
+  background: #313E50;*/
+  background: black;
+  font-family: courier;
+  margin: 0;
+  padding: 0;
 }
 a {
-  font-family: orator;
-  color: white;
-  font-size: 25px;
+  color: yellow;
 }
 a:hover {
   text-decoration: none;
   color: white;
 }
+h1{
+  margin : 0px;
+}
 
-#yolo {
-  padding: 50px;
+
+
+#canvas, #text {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#text {
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  }
-
-.card {text-align: center; padding: 40px}
-
-#footer {
-  background-color: red;
-  color : white;
-  padding : 30px;
 }
-
-#footer a {
-  color: white;
-  font-size: 30px;
-}
-#footer a:hover {
-  color: pink;
+#text h1 {
+  opacity: 0.9
 }
 
 
+
+.jumbotron{
+  /*background: url("https://media.giphy.com/media/jsULXDzIgEJwc/giphy.gif") no-repeat center center;*/
+  background: url("https://media.giphy.com/media/3og0IUCy6UyBfn7XTG/giphy.gif") no-repeat center center;
+  background-size: cover;
+  height: 550px;
+  margin-top : 0px;
+  padding-top: 0px;
+}
+.jumbotron .container h1{
+  margin-top : 0px;
+}
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}

@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Le Wagon x Audencia</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <meta charset="utf-8"/>
+  <title>Thomas Liberge</title>
+  <meta name="description" content="VR and AR engineer.">
+
+  <!-- Link the Js File-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="canvas.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900|Open+Sans:300,400,700" rel="stylesheet">
-    <link href="/style.css" rel='stylesheet'>
-  </head>
 
-    <body>
-    <div id="yolo">
-       <h1>Le RDV des passionnés de fondue bourguignonne</h1>
-       <p>Tout connaître sur ce petit bijou gastronomique</p>
-       <p>
-       <a href="#">Succombez à vos désirs les plus fous...</a>
-       </p>
+  <link type='text/css' rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <h1>Yo, i'm Thomas Liberge</h1>
+      <p>I'm currently looking for new opportunities in <strong>VR</strong> and <strong>AR</strong> industry</p>
+      <a href="http://quentinlepape.com" class="btn btn-warning" target="_blank">Quentin Lepape</a>
     </div>
-
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                  <div class="card text-center">
-                      <img src="images/soupe1.png" alt="Gourmande" width="100">
-                      <h2>Délicieuse</h2>
-                      <p>''Un rendez-vous unique'' <strong>Véro, 67 ans </strong> </p>
-              </div>
-            </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                   <div class="card text-center">
-                        <img src="images/soupe2.png" alt="Délicieuse" width="100">
-                        <h2>Gourmande</h2>
-                        <p>''Je ne peux plus m'en passer!', <strong>Maryse, 65 ans</strong></p>
-                   </div> 
-              </div>
-            </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="card text-center">
-                         <img src="images/soupe3.png" alt="picture description" width="100">
-                          <h2>Parfaite</h2>
-                          <p>''Lundi, c'est fondue bourguignonne à la maison''<strong>Annick, 14 ans</strong></p>
-                    </div>
-            </div>
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="card text-center">
-                       <img src="images/soupe4.png" alt="picture description" width="100">
-                        <h2>Ma préférée</h2>
-                       <p>''Les enfants adorent!'' <strong>Guy, retraité</strong> app</p>
-                     </div>
-              </div>
-          </div>
-
-
-    <div id="line">
-  
   </div>
 
-    <div id="footer">
-        <ul class="list-inline">
-         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-apple"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        </ul>
+  <div class ="container">
+    <div class="cta text-center">
+      <h2>Maybe you need some inspiration</h2>
+      <p>Type a word and try our solution</p>
+
+      <form action="/search" method="get" class="form-inline">
+        <input type="text" name="query" placeholder="Search dribbles..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-red">
+      </form>
     </div>
 
-  </body>
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-2 col-md-4">
+        <canvas id="canvas"></canvas>
+        <div id="text">
+          <h1>Everything Connects</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-2 col-md-4">
+        <div id="wufoo-z1ij2ttf0x90gkd">
+        Fill out my <a href="https://thomasliberge.wufoo.com/forms/z1ij2ttf0x90gkd">online form</a>.
+        </div>
+        <script type="text/javascript">var z1ij2ttf0x90gkd;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'thomasliberge',
+        'formHash':'z1ij2ttf0x90gkd',
+        'autoResize':true,
+        'height':'322',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { z1ij2ttf0x90gkd = new WufooForm();z1ij2ttf0x90gkd.initialize(options);z1ij2ttf0x90gkd.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+
+      </div>
+    </div>
+    <div class="row">
+      <!-- First row-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/briefcase.png" alt="picture description" width="100">
+          <h2>Fast</h2>
+          <p>A fast app, <strong>very fast</strong> app</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/diamond.png" alt="picture description" width="100">
+          <h2>Simple</h2>
+          <p>A simple app, <strong>very simple</strong> app</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="images/heart.png" alt="picture description" width="100">
+          <h2>Awesome</h2>
+          <p>An awesome app, <strong>very awesome</strong> app</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Second row-->
+    </div>
+    <div class="row">
+      <!-- Thirde row  class="col-xs-6"-->
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>Find me on :</p>
+    <ul class="list-inline">
+      <li><a href="https://www.linkedin.com/in/thomas-liberge/"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <!--<img width="500px" src="image/vr.png" alt="hummus">-->
+</body>
 </html>
+
